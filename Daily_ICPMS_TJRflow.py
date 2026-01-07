@@ -236,13 +236,13 @@ print("Available elements:", list_elements())
 print("Available samples:", list_samples())
 
 plot_elements(
-    ['55Mn (KED) [ppb]', '60Ni (KED) [ppb]', '63Cu (KED) [ppb]'],
+    ['55Mn (KED) [ppb]', '60Ni (KED) [ppb]', '63Cu (KED) [ppb]', '66Zn (KED) [ppb]'],
     sample_filter=[
         'IBA_05032025', 'IBA_05042025', 'IBA_05052025', 'IBA_05082025',
         'IBA_05132025', 'IBA_05142025', 'IBA_05152025', 'IBA_05162025',
         'IBA_05172025', 'IBA_05182025', 'IBA_05192025', 'IBA_05202025',
         'IBA_05212025', 'IBA_05222025', 'IBA_05232025', 'IBA_05242025',
-        'IBA_05252025', 'IBA_05262025', 'IBA_05272025', 'FB_05252025', 'MB_12162025'
+        'IBA_05252025', 'IBA_05262025', 'IBA_05272025'
     ],
     date_fmt="%Y-%m-%d",           # change to "%m/%d" or "%b %d" if you prefer
     overlay_tjr_flow=True,
