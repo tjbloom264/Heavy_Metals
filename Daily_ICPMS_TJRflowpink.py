@@ -80,7 +80,7 @@ def daily_mean_flow(flow_df: pd.DataFrame) -> pd.Series:
 element_colors = {
     '55Mn (KED) [ppb]': '#F7A1C4',  # soft pink
     '60Ni (KED) [ppb]': '#F06292',  # rose
-    '63Cu (KED) [ppb]': '#EC407A',  # deep pink
+    '63Cu (KED) [ppb]': '#FF00FF',  # hot pink 
     '66Zn (KED) [ppb]': '#AD1457',  # dark magenta
 }
 
@@ -178,7 +178,7 @@ def plot_elements(
 # ============================================================
 
 plot_elements(
-    ['208Pb (KED) [ppb]'],
+    ['55Mn (KED) [ppb]','60Ni (KED) [ppb]','63Cu (KED) [ppb]','66Zn (KED) [ppb]' ],
      #51V (KED) [ppb],'52Cr (KED) [ppb]', '59Co (KED) [ppb]','75As (KED) [ppb]', '77Se (KED) [ppb]', '111Cd (KED) [ppb]', '208Pb (KED) [ppb]'],
     sample_filter=[
         'IBA_05032025', 'IBA_05042025', 'IBA_05052025', 'IBA_05082025',
