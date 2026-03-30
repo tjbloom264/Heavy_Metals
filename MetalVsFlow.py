@@ -12,7 +12,7 @@ import numpy as np
 # ============================================================
 # USER SETTINGS
 # ============================================================
-ICP_FILE  = r'E:/Data/Raw/ICP-MS/ECAL_Bloom(Prather)_20251217.csv' 
+ICP_FILE  = r'e:\Data\Raw\ICP-MS\ECAL_Bloom(Prather)_20260224.csv' 
 
 # River flow file (CSV) and its columns
 FLOW_FILE      = r'E:/Data/Raw/Flow/Flow_0914-0924.csv'  # <-- change to your real path
@@ -21,38 +21,25 @@ FLOW_VALUE_COL = "Flow"                                    # <-- change if neede
 FLOW_UNITS     = "MG/DAY"                                     # e.g., cfs or m3/s
 
 # If your flow data are higher frequency, resample for stable matching (daily/hourly/etc.)
-FLOW_RESAMPLE_FREQ = "D"   # "D" daily, "H" hourly, None for no resample
+FLOW_RESAMPLE_FREQ = "h"   # "D" daily, "H" hourly, None for no resample
 
 # ============================================================
 # MANUAL SAMPLE -> DATETIME MAP (EDIT IF NEEDED)
 # Assumption: September 15–23, 2025; AM=09:15, PM=21:15
 # ============================================================
 sample_date_map = {
-    "915amSTR": "2025-09-15 09:15",
-    "915pmSTR": "2025-09-15 21:15",
+    
+    '915PMS_air': "2025-09-15 21:15",
 
     "916amSTR": "2025-09-16 09:15",
-    "916pmSTR": "2025-09-16 21:15",
+    "916PMS_air": "2025-09-16 21:15",
 
-    "917amSTR": "2025-09-17 09:15",
-    "917pmSTR": "2025-09-17 21:15",
+    "917AMS_air": "2025-09-17 09:15",
+    "917PMS_air": "2025-09-17 21:15",
 
-    "918amSTR": "2025-09-18 09:15",
-    "918pmSTR": "2025-09-18 21:15",
+    "918AMS_air": "2025-09-18 09:15",
+    "918PMS_air": "2025-09-18 21:15",
 
-    "919amSTR": "2025-09-19 09:15",
-    "919pmSTR": "2025-09-19 21:15",
-
-    "920amSTR": "2025-09-20 09:15",
-    "920pmSTR": "2025-09-20 21:15",
-
-    "921amSTR": "2025-09-21 09:15",
-    "921pmSTR": "2025-09-21 21:15",
-
-    "922amSTR": "2025-09-22 09:15",
-    "922pmSTR": "2025-09-22 21:15",
-
-    "923amSTR": "2025-09-23 09:15",
 }
 
 # Choose which elements to plot (edit these to match your column names)
@@ -62,15 +49,9 @@ ELEMENTS_TO_PLOT = [
 
 # Order of samples on the x-axis (edit as needed)
 SAMPLE_ORDER = [
-    '915amSTR', '915pmSTR',
-    '916amSTR', '916pmSTR',
-    '917amSTR', '917pmSTR',
-    '918amSTR', '918pmSTR',
-    '919amSTR', '919pmSTR',
-    '920amSTR', '920pmSTR',
-    '921amSTR', '921pmSTR',
-    '922amSTR', '922pmSTR',
-    '923amSTR'
+     '915PMS_air', '916PMS_air',
+    '917AMS_air', '917PMS_air',
+    '918AMS_air', '918PMS_air',
 ]
 
 # ============================================================
