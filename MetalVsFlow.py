@@ -12,10 +12,10 @@ import numpy as np
 # ============================================================
 # USER SETTINGS
 # ============================================================
-ICP_FILE  = r'e:\Data\Raw\ICP-MS\ECAL_Bloom(Prather)_20260224.csv' 
+ICP_FILE  = r'd:\Data\Raw\ICP-MS\MasterMetal\ECAL_Bloom(Prather)_20260224.csv' 
 
 # River flow file (CSV) and its columns
-FLOW_FILE      = r'E:/Data/Raw/Flow/Flow_0914-0924.csv'  # <-- change to your real path
+FLOW_FILE      = r'd:\Data\Raw\Flow\Flow_0914-0924.csv'  # <-- change to your real path
 FLOW_DATE_COL  = "DateTime"                                # <-- change if needed
 FLOW_VALUE_COL = "Flow"                                    # <-- change if needed
 FLOW_UNITS     = "MG/DAY"                                     # e.g., cfs or m3/s
